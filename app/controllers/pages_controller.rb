@@ -3,4 +3,22 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def reina
+  end
+
+  def rey
+  end
+
+  def peon
+  end
+
+  def torre
+  end
+
+  def caballo
+  end
+
+  def alfil
+  end
 end
