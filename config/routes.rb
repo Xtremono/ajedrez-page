@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'game/play'
   devise_for :users
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
   get "torre", to: "pages#torre", as: :torre
   get "caballo", to: "pages#caballo", as: :caballo
   get "alfil", to: "pages#alfil", as: :alfil
+  get "ajedrez", to: "game#play", as: :ajedrez
   # Defines the root path route ("/")
   # root "posts#index"
 end
